@@ -1,0 +1,1091 @@
+{
+	"info": {
+		"_postman_id": "59cf9c37-ae74-48e3-8e3f-2578f06085fc",
+		"name": "API-CONCESIONARIO",
+		"description": "Esta es una colección de casos de uso para consumo del api de concesionario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TIPO",
+			"item": [
+				{
+					"name": "listado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/tipo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"tipo"
+							]
+						},
+						"description": "Obtiene la lista de tipos de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": \"BUS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/tipo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"tipo"
+							]
+						},
+						"description": "Crea un nuevo tipo de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "actualiza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoid\": 5,\r\n    \"tipo\": \"SUV\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/tipo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"tipo"
+							]
+						},
+						"description": "Actualiza un registro de tipo de vehículo existente"
+					},
+					"response": []
+				},
+				{
+					"name": "elimina",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoid\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/tipo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"tipo"
+							]
+						},
+						"description": "Elimina un tipo de vehículo validando la integridad referencial"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MARCA",
+			"item": [
+				{
+					"name": "listado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/marca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"marca"
+							]
+						},
+						"description": "Obtiene la lista de tipos de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marca\": \"BMW\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/marca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"marca"
+							]
+						},
+						"description": "Crea un nuevo tipo de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "actualiza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marcaid\": 4,\r\n    \"marca\": \"MAZDA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/marca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"marca"
+							]
+						},
+						"description": "Actualiza un registro de tipo de vehículo existente"
+					},
+					"response": []
+				},
+				{
+					"name": "elimina",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marcaid\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/marca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"marca"
+							]
+						},
+						"description": "Elimina un tipo de vehículo validando la integridad referencial"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LINEA",
+			"item": [
+				{
+					"name": "listado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marcaid\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/linea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"linea"
+							]
+						},
+						"description": "Obtiene la lista de tipos de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marcaid\": 1,\r\n    \"linea\": \"PILOT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/linea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"linea"
+							]
+						},
+						"description": "Crea un nuevo tipo de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "actualiza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marcaid\": 1,\r\n    \"lineaid\": 4,\r\n    \"linea\": \"CRV\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/linea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"linea"
+							]
+						},
+						"description": "Actualiza un registro de tipo de vehículo existente"
+					},
+					"response": []
+				},
+				{
+					"name": "elimina",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marcaid\": 1,\r\n    \"lineaid\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/linea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"linea"
+							]
+						},
+						"description": "Elimina un tipo de vehículo validando la integridad referencial"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VEHICULO",
+			"item": [
+				{
+					"name": "listado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoid\": 1,\r\n    \"marcaid\": 1,\r\n    \"lineaid\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/vehiculo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"vehiculo"
+							]
+						},
+						"description": "Obtiene la lista de tipos de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoid\": 1,\r\n    \"marcaid\": 1,\r\n    \"lineaid\": 3,\r\n    \"cc\": 1800,\r\n    \"color\": \"VERDE\",\r\n    \"modelo\": \"2012\",\r\n    \"precio\": 54000.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/vehiculo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"vehiculo"
+							]
+						},
+						"description": "Crea un nuevo tipo de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "actualiza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehiculoid\": 10,\r\n    \"tipoid\": 1,\r\n    \"marcaid\": 1,\r\n    \"lineaid\": 3,\r\n    \"cc\": 1800,\r\n    \"color\": \"VERDE\",\r\n    \"modelo\": \"2012\",\r\n    \"precio\": 54000.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/vehiculo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"vehiculo"
+							]
+						},
+						"description": "Actualiza un registro de tipo de vehículo existente"
+					},
+					"response": []
+				},
+				{
+					"name": "elimina",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vehiculoid\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/vehiculo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"vehiculo"
+							]
+						},
+						"description": "Elimina un tipo de vehículo validando la integridad referencial"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CONCESIONARIO",
+			"item": [
+				{
+					"name": "listado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/concesionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"concesionario"
+							]
+						},
+						"description": "Obtiene la lista de tipos de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Impocar\",\r\n    \"direccion\": \"17 Ave 2-15 Z. 15, Blvd Vista Hermosa, Ciudad Guatemala\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/concesionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"concesionario"
+							]
+						},
+						"description": "Crea un nuevo tipo de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "actualiza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"concesionarioid\": 2,\r\n    \"nombre\": \"Impocar\",\r\n    \"direccion\": \"1 Calle 33-13 Z. 7, Colonia Toledo, Ciudad Guatemala\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/concesionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"concesionario"
+							]
+						},
+						"description": "Actualiza un registro de tipo de vehículo existente"
+					},
+					"response": []
+				},
+				{
+					"name": "elimina",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"concesionarioid\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/concesionario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"concesionario"
+							]
+						},
+						"description": "Elimina un tipo de vehículo validando la integridad referencial"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AGENTE",
+			"item": [
+				{
+					"name": "listado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/agente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"agente"
+							]
+						},
+						"description": "Obtiene la lista de tipos de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\": \"Dani\",\r\n    \"apellidos\": \"Martínez\",\r\n    \"concesionarioid\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/agente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"agente"
+							]
+						},
+						"description": "Crea un nuevo tipo de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "actualiza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"agenteid\": 3,\r\n    \"nombres\": \"Daniela\",\r\n    \"apellidos\": \"Martínez\",\r\n    \"concesionarioid\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/agente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"agente"
+							]
+						},
+						"description": "Actualiza un registro de tipo de vehículo existente"
+					},
+					"response": []
+				},
+				{
+					"name": "elimina",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"agenteid\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/agente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"agente"
+							]
+						},
+						"description": "Elimina un tipo de vehículo validando la integridad referencial"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CLIENTE",
+			"item": [
+				{
+					"name": "listado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"cliente"
+							]
+						},
+						"description": "Obtiene la lista de tipos de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\": \"Adriana\",\r\n    \"apellidos\": \"Robles\",\r\n    \"telefono\": \"47485596\",\r\n    \"direccion\": \"7 Ave 5-12 zona 2, Guatemala\",\r\n    \"nacimiento\": \"1991-03-16\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"cliente"
+							]
+						},
+						"description": "Crea un nuevo tipo de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "actualiza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clienteid\": 3,\r\n    \"nombres\": \"Amparo\",\r\n    \"apellidos\": \"Maldonado\",\r\n    \"telefono\": \"47485596\",\r\n    \"direccion\": \"7 Ave 5-12 zona 2, Guatemala\",\r\n    \"nacimiento\": \"1991-03-16\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"cliente"
+							]
+						},
+						"description": "Actualiza un registro de tipo de vehículo existente"
+					},
+					"response": []
+				},
+				{
+					"name": "elimina",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"clienteid\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"cliente"
+							]
+						},
+						"description": "Elimina un tipo de vehículo validando la integridad referencial"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "COTIZACION",
+			"item": [
+				{
+					"name": "listado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/cotizacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"cotizacion"
+							]
+						},
+						"description": "Obtiene la lista de tipos de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "listadoByFecha",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaInicial\": \"2021-02-01\",\r\n    \"fechaFinal\": \"2021-02-28\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/cotizacion/porFecha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"cotizacion",
+								"porFecha"
+							]
+						},
+						"description": "Obtiene la lista de tipos de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "insert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"agenteid\": 2,\r\n    \"clienteid\": 2,\r\n    \"vehiculoid\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/cotizacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"cotizacion"
+							]
+						},
+						"description": "Crea un nuevo tipo de vehículo"
+					},
+					"response": []
+				},
+				{
+					"name": "actualiza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cotizacionid\": 3,\r\n    \"agenteid\": 2,\r\n    \"clienteid\": 2,\r\n    \"vehiculoid\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/cotizacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"cotizacion"
+							]
+						},
+						"description": "Actualiza un registro de tipo de vehículo existente"
+					},
+					"response": []
+				},
+				{
+					"name": "elimina",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cotizacionid\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/concesionario/api/cotizacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"concesionario",
+								"api",
+								"cotizacion"
+							]
+						},
+						"description": "Elimina un tipo de vehículo validando la integridad referencial"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
